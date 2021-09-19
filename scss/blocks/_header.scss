@@ -1,0 +1,60 @@
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 104px;
+    @media (max-width: 479px) {
+      min-height: 70px;
+    }
+  }
+  &__logo {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    color: inherit;
+  }
+  &__menu {
+    margin-left: 132px;
+    padding: 5px 0;
+    @media (max-width: 992px) {
+      margin-left: 80px;
+    }
+    @media (max-width: 767px) {
+      margin-left: 40px;
+    }
+    @media (max-width: 479px) {
+      margin-left: 20px;
+    }
+  }
+}
+
+// ============== МЕНЮ ========================
+
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 21px;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    line-height: calc(24 / 14 * 100%);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: #737373;
+    @media (max-width: 479px) {
+      font-size: 18px;
+    }
+  }
+}
